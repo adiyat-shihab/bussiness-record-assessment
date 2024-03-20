@@ -1,9 +1,16 @@
 import Image from "next/image";
-import DropdownContainer from "@/components/Navigation Dropdown/DropdownContainer";
+import DropdownContainer from "@/components/Navigation/Navigation Dropdown/DropdownContainer";
 
 const NavigationMenu = () => {
-  const list1 = ["Roadmap", "Feedback", "Performance", "Team", "Analytics"];
-  const list2 = ["Sales", "Products"];
+  const list1 = [
+    "Roadmap",
+    "Feedback",
+    "Performance",
+    "Team",
+    "Analytics",
+    "Add new sub",
+  ];
+  const list2 = ["Sales", "Products", "Add new sub"];
   return (
     <div>
       <div className={"flex justify-between pl-2 cursor-default  py-4"}>

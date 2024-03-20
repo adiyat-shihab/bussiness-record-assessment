@@ -1,8 +1,8 @@
 "use client";
-import NavigationTabs from "@/components/Navigation Tabs/NavigationTabs";
+import NavigationTabs from "@/components/Navigation/Navigation Tabs/NavigationTabs";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import Dropdown from "@/components/Navigation Dropdown/Dropdown";
+import Dropdown from "@/components/Navigation/Navigation Dropdown/Dropdown";
 import { useState } from "react";
 
 const DropdownContainer = ({ title, list = [] }) => {

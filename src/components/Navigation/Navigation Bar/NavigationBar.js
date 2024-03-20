@@ -11,10 +11,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import NavigationTabs from "@/components/Navigation Tabs/NavigationTabs";
+import NavigationTabs from "@/components/Navigation/Navigation Tabs/NavigationTabs";
 import { cn } from "@/lib/utils";
-import NavigationTeam from "@/components/Navigation Team/NavigationTeam";
-import NavigationMenu from "@/components/Navigation Menu/NavigationMenu";
+import NavigationTeam from "@/components/Navigation/Navigation Team/NavigationTeam";
+import NavigationMenu from "@/components/Navigation/Navigation Menu/NavigationMenu";
 
 /**
  * The NavigationBar component displays the navigation tabs and the company logo.
@@ -29,7 +29,6 @@ const NavigationBar = () => {
               src={"/main-logo.png"}
               alt={"logo"}
               className={"rounded-md w-auto h-auto"}
-              priority={true}
               width={35}
               height={35}
             />

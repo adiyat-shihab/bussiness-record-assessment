@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import NavigationTabs from "@/components/Navigation Tabs/NavigationTabs";
+import NavigationTabs from "@/components/Navigation/Navigation Tabs/NavigationTabs";
 
 const NavigationTeam = () => {
   return (
