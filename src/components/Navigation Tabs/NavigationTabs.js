@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-const NavigationTabs = ({ icon = "", title }) => {
+const NavigationTabs = ({ icon = "", title, grayText }) => {
   return (
     <div
       className={
-        "hover:bg-[#F4F5F6] w-full hover:rounded-md transition duration-150 cursor-pointer"
+        "hover:bg-[#F4F5F6] w-full rounded-[8px] transition duration-150 cursor-pointer"
       }
     >
       <div className={"flex items-center gap-2  px-3 py-1.5"}>
@@ -15,10 +15,10 @@ const NavigationTabs = ({ icon = "", title }) => {
           className={cn(icon || "hidden")}
           src={icon}
           alt={"icon"}
-          width={18}
-          height={18}
+          width={19}
+          height={19}
         />
-        <h1 className={"font-semibold tracking-tight"}>{title}</h1>
+        <h1 className={`font-semibold ${grayText}`}>{title}</h1>
       </div>
     </div>
   );

@@ -19,6 +19,9 @@ module.exports = {
       },
     },
     extend: {
+      transitionProperty: {
+        height: "height",
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },

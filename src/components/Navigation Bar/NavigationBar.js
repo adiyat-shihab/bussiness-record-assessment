@@ -12,6 +12,9 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import NavigationTabs from "@/components/Navigation Tabs/NavigationTabs";
+import { cn } from "@/lib/utils";
+import NavigationTeam from "@/components/Navigation Team/NavigationTeam";
+import NavigationMenu from "@/components/Navigation Menu/NavigationMenu";
 
 /**
  * The NavigationBar component displays the navigation tabs and the company logo.
@@ -19,7 +22,7 @@ import NavigationTabs from "@/components/Navigation Tabs/NavigationTabs";
 const NavigationBar = () => {
   return (
     <Card>
-      <CardHeader>
+      <CardHeader className={"px-4 pt-2"}>
         <div className={"flex gap-16 items-center"}>
           <div className={"flex gap-2 items-center"}>
             <Image
@@ -47,24 +50,8 @@ const NavigationBar = () => {
         </div>
       </CardHeader>
       <CardContent>
-        <Card className={"-mx-3"}>
-          <CardContent className={"py-1.5 space-y-2 px-2  "}>
-            {/*team navigation Tabs*/}
-            <NavigationTabs
-              title={"Designing Team"}
-              icon={"/Navigation Icons/pen-tool.svg"}
-            />
-            <NavigationTabs
-              title={"Marketing Team"}
-              icon={"/Navigation Icons/megaphone.svg"}
-            />
-            <NavigationTabs
-              title={"Development Team"}
-              icon={"/Navigation Icons/code.svg"}
-            />
-            <div></div>
-          </CardContent>
-        </Card>
+        <NavigationTeam />
+        <NavigationMenu />
       </CardContent>
     </Card>
   );
