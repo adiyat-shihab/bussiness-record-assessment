@@ -19,6 +19,7 @@ const DropdownContainer = ({ title, list = [] }) => {
         <Image
           src={"/Navigation Icons/caret-down.svg"}
           alt={"icon"}
+          priority={true}
           width={12}
           height={12}
           className={cn(caret && "rotate-180", "transition duration-200 ")}

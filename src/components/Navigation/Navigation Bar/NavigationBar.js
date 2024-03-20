@@ -28,6 +28,7 @@ const NavigationBar = () => {
             <Image
               src={"/main-logo.png"}
               alt={"logo"}
+              priority={true}
               className={"rounded-md w-auto h-auto"}
               width={35}
               height={35}
